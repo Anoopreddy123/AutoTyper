@@ -127,6 +127,32 @@ public class Keyboard {
                     robot.delay(200);
                     robot.keyPress(KeyEvent.VK_PERIOD);
                 }
+                else if(code == 63){
+                    robot.keyPress(KeyEvent.VK_SHIFT);
+                    robot.keyPress(KeyEvent.VK_SLASH);
+                    robot.keyRelease(KeyEvent.VK_SHIFT);
+                    robot.keyRelease(KeyEvent.VK_SLASH);
+                }
+                else if(code == 42){
+                    robot.delay(200);
+                    robot.keyPress(KeyEvent.VK_SHIFT);
+                    robot.keyPress(KeyEvent.VK_8);
+                    robot.keyRelease(KeyEvent.VK_SHIFT);
+                    robot.keyRelease(KeyEvent.VK_8);
+                }
+                else if(code == 58){
+                    robot.keyPress(KeyEvent.VK_SHIFT);
+                    robot.keyPress(KeyEvent.VK_SEMICOLON);
+                    robot.keyRelease(KeyEvent.VK_SHIFT);
+                    robot.keyRelease(KeyEvent.VK_SEMICOLON);
+                }
+                else if(code == 33){
+                    robot.delay(200);
+                    robot.keyPress(KeyEvent.VK_SHIFT);
+                    robot.keyPress(KeyEvent.VK_1);
+                    robot.keyRelease(KeyEvent.VK_SHIFT);
+                    robot.keyRelease(KeyEvent.VK_1);
+                }
                else
                 {
                     System.out.println("Error");
